@@ -4,41 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>coli-introduction</title>
-	<style>
-		div{
-			border: 1px solid;
-		}
-		table {
-    		width: 100%;
-    		border: 1px solid #444444;
-  			}
-  		th, td {
-    		border: 1px solid #444444;
-  			}
-  		img{
-  			width: 50px;
-  			height: 50px;
-  		}
-  		li {
-  			padding: 3px;
-  		}
-	</style>
-	<script>
-		const alertButton = document.getElementById("movieButton");
-		alertButton.addEventListener("click", getSameMovies);
-
-		function getSameMovies(){
-			let movies = document.getElementsByClassName("movie");
-			let name = document.getElementById("visitedName").value;
-			let cnt=0;
-			for (var i = movies.length - 1; i >= 0; i--) {
-					if(movies[i].checked==true){
-						cnt+=1;
-					}
-			}
-			window.alert(name+"님, 저와 "+cnt+"개의 취향이 같으시네요!");
-		}
-	</script>
+	<link href="../css/introduction.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<div id="introduction">
@@ -46,7 +12,9 @@
 		<ul type="circle">
 			<li>이름 : Coli</li>
 			<li>사는 곳 : 관악구</li>
-			<li>소개 : </li>
+			<li>소개 : 평범한 대학생입니다</li>
+			<li>블로그1 : <a href="https://blog.naver.com/kkwoo001021">토론 블로그 [이웃집 토토론]</a></li>
+			<li>블로그2 : <a href="https://hellobrocolli.tistory.com/">개발 블로그 [헤이,브로]</a></li>
 		</ul>
 	</div>
 	<div id="bestmovie">
@@ -92,6 +60,6 @@
 			<button type="submit">취소</button>
 		</p>
 	</div>
-	
+	<script src="../js/introduction_.js"></script>
 </body>
 </html>
