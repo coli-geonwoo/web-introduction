@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>coli-introduction</title>
+	<style>
+		div{
+			border: 1px solid;
+		}
+		table {
+    		width: 100%;
+    		border: 1px solid #444444;
+  			}
+  		th, td {
+    		border: 1px solid #444444;
+  			}
+  		img{
+  			width: 50px;
+  			height: 50px;
+  		}
+  		li {
+  			padding: 3px;
+  		}
+	</style>
+	<script>
+		const alertButton = document.getElementById("movieButton");
+		alertButton.addEventListener("click", getSameMovies);
+
+		function getSameMovies(){
+			let movies = document.getElementsByClassName("movie");
+			let name = document.getElementById("visitedName").value;
+			let cnt=0;
+			for (var i = movies.length - 1; i >= 0; i--) {
+					if(movies[i].checked==true){
+						cnt+=1;
+					}
+			}
+			window.alert(name+"님, 저와 "+cnt+"개의 취향이 같으시네요!");
+		}
+	</script>
+</head>
+<body>
+	<div id="introduction">
+		<h1>자기소개</h1>
+		<ul type="circle">
+			<li>이름 : Coli</li>
+			<li>사는 곳 : 관악구</li>
+			<li>소개 : </li>
+		</ul>
+	</div>
+	<div id="bestmovie">
+		<h1>인생 영화 BEST5</h1>
+		<br><br>
+		<table>
+			<tr><th width="50px">순위</th><th width="100px">제목</th><th>포스터</th><th>줄거리</th><th width="100px">바로가기</th></tr>
+			<tr><td>1</td><td>어바웃 타임</td><td><img src="../images/1.jpg"></td>
+				<td>모태솔로 팀(돔놀 글리슨)은 성인이 된 날, 아버지(빌 나이)로부터 놀랄만한 가문의 비밀을 듣게 된다. 바로 시간을 되돌릴 수 있는 능력이 있다는 것! 그것이 비록 히틀러를 죽이거나 여신과 뜨거운 사랑을 할 수는 없지만, 여자친구는 만들어 줄 순 있으리.. 꿈을 위해 런던으로 간 팀은 우연히 만난 사랑스러운 여인 메리에게 첫눈에 반하게 된다. 그녀의 사랑을 얻기 위해 자신의 특별한 능력을 마음껏 발휘하는 팀. 어설픈 대시, 어색한 웃음은 리와인드! 뜨거웠던 밤은 더욱 뜨겁게 리플레이! 꿈에 그리던 그녀와 매일매일 최고의 순간을 보낸다. 하지만 그와 그녀의 사랑이 완벽해질수록 팀을 둘러싼 주변 상황들은 미묘하게 엇갈리고, 예상치 못한 사건들이 여기저기 나타나기 시작하는데… 어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?</td>
+				<td><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&x_csa=%7B%22isOpen%22%3Atrue%7D&pkid=68&os=1825486&qvt=0&query=%EC%98%81%ED%99%94%20%EC%96%B4%EB%B0%94%EC%9B%83%20%ED%83%80%EC%9E%84%20%EC%A0%95%EB%B3%B4">클릭</a></td>
+			</tr>
+			<tr><td>2</td><td>메멘토</td><td><img src="../images/2.jpg"></td>
+				<td>아내가 살해당한 후, 10분밖에 기억 못하는 단기기억상실증에 걸린 남자가 사진, 메모, 문신으로 남긴 기록을 따라 범인을 쫓는 기억 추적 스릴러</td>
+				<td><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=1769914&qvt=0&query=%EC%98%81%ED%99%94%20%EB%A9%94%EB%A9%98%ED%86%A0">클릭</a></td>
+			</tr>
+			<tr><td>3</td><td>블랙스완</td><td><img src="../images/3.jpg"></td>
+				<td>새롭게 해석된 [백조의 호수] 공연에서 순수하고 가녀린 백조와 관능적이고 도발적인 흑조, 1인 2역을 완벽하게 해내고 싶은 프리마돈나 ‘니나’ 완벽을 향한 그녀의 욕망은 집착이 되어가고 모두 자신을 파괴할 것 같은 불안감이 깊어질수록 점차 어두운 내면이 드러나는데… 흑조를 탐한 백조의 핏빛 도발이 다시 시작된다!</td>
+				<td><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&x_csa=%7B%22isOpen%22%3Atrue%7D&pkid=68&os=1805711&qvt=0&query=%EC%98%81%ED%99%94%20%EB%B8%94%EB%9E%99%20%EC%8A%A4%EC%99%84%20%EC%A0%95%EB%B3%B4">클릭</a></td>
+			</tr>
+			<tr><td>4</td><td>her</td><td><img src="../images/4.jpg"></td>
+				<td>다른 사람의 편지를 써주는 대필 작가로 일하고 있는 ‘테오도르’는 타인의 마음을 전해주는 일을 하고 있지만 정작 자신은 아내와 별거 중인 채 외롭고 공허한 삶을 살아가고 있다. 어느 날, 스스로 생각하고 느끼는 인공지능 운영체제 ‘사만다’를 만나게 되고, 자신의 말에 귀를 기울이며 이해해주는 ‘사만다’로 인해 조금씩 상처를 회복하고 행복을 되찾기 시작한 ‘테오도르’는 어느새 점점 그녀에게 사랑의 감정을 느끼게 되는데...</td>
+				<td><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&x_csa=%7B%22isOpen%22%3Atrue%7D&pkid=68&os=1835117&qvt=0&query=%EC%98%81%ED%99%94%20%EA%B7%B8%EB%85%80%20%EC%A0%95%EB%B3%B4">클릭</a></td>
+			</tr>
+			<tr><td>5</td><td>굿 윌 헌팅</td><td><img src="../images/5.jpg"></td>
+				<td>수학, 법학, 역사학 등 모든 분야에 재능이 있는 ‘윌’(맷 데이먼)은 천재적인 두뇌를 가지고 있지만 어린 시절 받은 상처로 인해 세상에 마음을 열지 못하는 불우한 반항아. 절친인 ‘처키’(벤 애플렉)와 어울리던 ‘윌’의 재능을 알아본 MIT 수학과 ‘램보’ 교수는 대학 동기인 심리학 교수 ‘숀’(로빈 윌리엄스)에게 그를 부탁하게 되고 거칠기만 하던 ‘윌’은 ‘숀’과 함께 시간을 보낼수록 상처를 위로 받으며 조금씩 변화하기 시작하는데…</td>
+				<td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EC%98%81%ED%99%94+%EA%B5%BF%EC%9C%8C+%ED%97%8C%ED%8C%85+%EC%A0%95%EB%B3%B4&oquery=%EC%98%81%ED%99%94+%EA%B7%B8%EB%85%80+%EC%A0%95%EB%B3%B4&tqi=iPsU6sqo1LVssM3ho8hssssssis-118359">클릭</a></td>
+			</tr>
+		</table>	
+	</div>
+
+	<div id="visitedBook">
+		<h1>방명록</h1>
+		<p>이름:&nbsp&nbsp<input type="text" id="visitedName"></p>
+		<p>본인 취향 영화<br>
+			<input class="movie" type="checkbox">어바웃 타임
+			<input class="movie" type="checkbox">메멘토
+			<input class="movie" type="checkbox">블랙스완
+			<input class="movie" type="checkbox">her
+			<input class="movie" type="checkbox">굿 윌 헌팅
+		</p>
+		<p>
+			<button id="movieButton" type="button">등록</button>
+			<button type="submit">취소</button>
+		</p>
+	</div>
+	
+</body>
+</html>
